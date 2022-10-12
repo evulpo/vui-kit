@@ -1,0 +1,35 @@
+{
+    "name": "evulpo/vui-kit",
+    "description": "Components Kit UI library",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Vincent Delaleu",
+            "email": "12876957+delvvince@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Evulpo\\VuiKit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Evulpo\\VuiKit\\Providers\\VuiKitServiceProvider"
+            ],
+            "aliases": {
+                "VuiKit": "Evulpo\\VuiKit\\Facade"
+            }
+        }
+    },
+    "require": {}
+}
