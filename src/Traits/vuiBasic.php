@@ -4,7 +4,6 @@ namespace Evulpo\VuiKit\Traits;
 
 trait vuiBasic
 {
-
     public $theme = 'gray';
     public $tdark = 900;
     public $tmedium = 600;
@@ -57,7 +56,6 @@ trait vuiBasic
     ];
 
     //form styles
-
     public $tFormStyle = " m-1 w-full border rounded
         outline-none 
         transition-all duration-300
@@ -77,7 +75,6 @@ trait vuiBasic
     ];
 
     public $colorVar = [
-        
         'light' => [
             'bg' => 200,
             'border' => 400,
@@ -88,8 +85,8 @@ trait vuiBasic
             'border' => 900,
             'hover' => 800
         ],
-
     ];
+
 
     /**
      * Get Commen form styles
@@ -105,6 +102,7 @@ trait vuiBasic
         $this->tFormStyle .= " ".$this->tFormSizes[$size];
         return $this->tFormStyle;
     }
+
 
     /**
      * Get bg
@@ -132,6 +130,7 @@ trait vuiBasic
         return $style;
     }
 
+
     /**
      * Add Hover to style
      *
@@ -149,6 +148,7 @@ trait vuiBasic
         return implode(' ', $final);
     }
 
+
     /**
      * BG
      *
@@ -161,6 +161,7 @@ trait vuiBasic
     {
         return $this->getColor($color, 'bg', $type);
     }
+
 
     /**
      * Border
@@ -175,5 +176,3 @@ trait vuiBasic
         return $this->getColor($color, 'border', $type);
     }
 }
-
-

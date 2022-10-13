@@ -19,9 +19,10 @@ return [
         | https://heroicons.com
         |
     */
-    // 'icons' => [
-    //     'style' => env('WIREUI_ICONS_STYLE', 'outline'),
-    // ],
+    'icons' => [
+        'style' => env('VUI_ICONS_STYLE', 'outline'),
+    ],
+
 
     /*
         |--------------------------------------------------------------------------
@@ -31,13 +32,14 @@ return [
         | The default modal preferences
         |
     */
-    // 'modal' => [
-    //     'zIndex'   => env('WIREUI_MODAL_Z_INDEX', 'z-50'),
-    //     'maxWidth' => env('WIREUI_MODAL_MAX_WIDTH', '2xl'),
-    //     'spacing'  => env('WIREUI_MODAL_SPACING', 'p-4'),
-    //     'align'    => env('WIREUI_MODAL_ALIGN', 'start'),
-    //     'blur'     => env('WIREUI_MODAL_BLUR', false),
-    // ],
+    'modal' => [
+        'zIndex'   => env('VUI_MODAL_Z_INDEX', 'z-50'),
+        'maxWidth' => env('VUI_MODAL_MAX_WIDTH', '2xl'),
+        'spacing'  => env('VUI_MODAL_SPACING', 'p-4'),
+        'align'    => env('VUI_MODAL_ALIGN', 'start'),
+        'blur'     => env('VUI_MODAL_BLUR', false),
+    ],
+
 
     /*
         |--------------------------------------------------------------------------
@@ -47,29 +49,30 @@ return [
         | The default card preferences
         |
     */
-    // 'card' => [
-    //     'padding'   => env('WIREUI_CARD_PADDING', 'px-2 py-5 md:px-4'),
-    //     'shadow'    => env('WIREUI_CARD_SHADOW', 'shadow-md'),
-    //     'rounded'   => env('WIREUI_CARD_ROUNDED', 'rounded-lg'),
-    //     'color'     => env('WIREUI_CARD_COLOR', 'bg-white dark:bg-secondary-800'),
-    // ],
+    'card' => [
+        'padding'   => env('VUI_CARD_PADDING', 'px-2 py-5 md:px-4'),
+        'shadow'    => env('VUI_CARD_SHADOW', 'shadow-md'),
+        'rounded'   => env('VUI_CARD_ROUNDED', 'rounded-lg'),
+        'color'     => env('VUI_CARD_COLOR', 'bg-white dark:bg-secondary-800'),
+    ],
+
 
     /*
         |--------------------------------------------------------------------------
         | Components
         |--------------------------------------------------------------------------
         |
-        | List with WireUI components.
+        | List with VUI components.
         | Change the alias to call the component with a different name.
         | Extend the component and replace your changes in this file.
         | Remove the component from this file if you don't want to use.
         |
      */
     'components' => [
-        // 'avatar' => [
-        //     'class' => Components\Avatar::class,
-        //     'alias' => 'avatar',
-        // ],
+        'avatar' => [
+            'class' => Components\Avatar::class,
+            'alias' => 'avatar',
+        ],
         'icon' => [
             'class' => Components\Icon::class,
             'alias' => 'icon',
@@ -200,40 +203,3 @@ return [
         // ],
     ],
 ];
-
-
-// return [
-
-    // //theme
-    // 'theme' => 'gray',
-
-    // //default size for button , alert, form elements
-    // 'size'  => 'md',
-
-    // //form element types ------------------
-    // 'formTypes' => [
-
-    //     'default' => [
-    //         //'color' => 'gray', 
-    //         'icon' => ' fa fa-exclamation-circle '
-    //     ],
-    //     'success' => [
-    //         //'color' => 'green', 
-    //         'icon' => 'fa fa-check-circle'
-    //     ],
-    //     'warning' => [
-    //         //'color' => 'yellow', 
-    //         'icon' => 'fa fa-exclamation-triangle'
-    //     ],
-    //     'danger'  => [
-    //         //'color' => 'red', 
-    //         'icon' => 'fa fa-close'
-    //     ],
-    //     'info'    => [
-    //         //'color' => 'gray',
-    //          'icon' => 'fa fa-exclamation-circle'
-    //     ],
-
-    // ],
-
-// ];
