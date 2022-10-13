@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-sm {
+    @apply px-4;
+    @apply py-1;
+    @apply text-sm;
+}
+
+.btn-md {
+    @apply px-6;
+    @apply py-2;
+}
+
+.btn-lg {
+    @apply px-8;
+    @apply py-3;
+    @apply text-lg;
+}

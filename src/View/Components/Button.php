@@ -16,6 +16,13 @@ class Button extends Component
     public $size;
     public $style;
     // public $isDark = false;
+    
+    public $sizeStyle = [
+        'sm' => ['px-3','py-1','text-sm'],
+        'md' => ['px-4','py-2'],
+        'lg' => ['px-8','py-3']
+    ];
+
 
     // /**
     //  * Create a new component instance.
