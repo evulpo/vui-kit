@@ -29,7 +29,7 @@
             'text-blue-500 hover:text-blue-700' => $link,
             'bg-gray-200 hover:bg-gray-300' => $gray,
             'bg-gray-600 hover:bg-gray-800 text-white' => $darkGray,
-            'rounded-md border-iris-500 text-iris-500 hover:bg-iris-500 hover:text-white active:bg-iris-600 active:text-white transition transition-all duration-300 cursor-pointer rounded']) 
+            'rounded-md border-2 border-iris-500 text-iris-500 hover:bg-iris-500 hover:text-white active:bg-iris-600 active:text-white transition transition-all duration-300 cursor-pointer rounded']) 
         }}
         >
         button src/views/components       
