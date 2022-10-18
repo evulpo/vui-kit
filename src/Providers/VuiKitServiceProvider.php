@@ -63,10 +63,13 @@ class VuiKitServiceProvider extends ServiceProvider
 
 
         // BLADE COMPONENTS
+        Blade::component('vui-inline-poc', InlinePoc::class);
+        // buttons 
         Blade::component('button', Button::class);
         Blade::component('vui-button', Button::class);
-        Blade::component('vui-inline-poc', InlinePoc::class);
         // Blade::component('button', Button::class, $prefix);
+        // inputs
+
 
 
         // LIVEWIRE COMPONENTS
