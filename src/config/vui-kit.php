@@ -7,7 +7,7 @@
  * @version v0.0.1
  */
 
- use Evulpo\VuiKit\View\Components;
+use Evulpo\VuiKit\View\Components;
 
 return [
     /*

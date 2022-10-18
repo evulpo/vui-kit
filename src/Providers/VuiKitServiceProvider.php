@@ -39,31 +39,27 @@ use  Evulpo\VuiKit\View\Components\{
 class VuiKitServiceProvider extends ServiceProvider 
 {
 
-    public function boot() {
+    public function boot():void {
 
         $prefix = 'vui';
         // dd('VuiKit Service Provider from /src/Providers/.. ' . $prefix);
-
         // ... other things
+
+
         //views
         $this->loadViewsFrom(__DIR__ . '/../views', 'vui');
         $this->loadViewsFrom(__DIR__.'/../views/components', 'vui');
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'vui');
         
+
         //publish
         $this->publishes([
-            __DIR__.'/config/vui.php' => config_path('vui.php'),
-            __DIR__.'/../views' => resource_path('views/vendor/vui'),
+            __DIR__.'/config/vui-kit.php' => config_path('vui-kit.php'),
+            // __DIR__.'/../views' => resource_path('views/vendor/vui-kit'),
+            __DIR__."/../../dist/vui-kit.css" => public_path('build/assets/vui-kit.css'),
+            __DIR__."/../../public" => public_path('vendor/evulpo'),    
         ], 'vui');
 
-        // $this->publishes([
-        //     __DIR__."/config/btui.php" => config_path('btui.php'),
-        //     __DIR__."./../assets/btui_v2.2.0.css" => public_path('css/btui.css')
-        // ], 'btui');
-
-        // $this->publishes([
-        //     __DIR__."./../assets/btui_v2.2.0.css" => public_path('css/btui.css')
-        // ], 'btui-update');
 
         // BLADE COMPONENTS
         Blade::component('button', Button::class);
@@ -75,12 +71,21 @@ class VuiKitServiceProvider extends ServiceProvider
         // LIVEWIRE COMPONENTS
         // Livewire::component('some-component', SomeComponent::class);
 
+
+        // $this->bootDirectives();
         // 
         // $this->registerConfig();
         // $this->registerBladeDirectives();
         // $this->registerBladeComponents();
         // $this->registerTagCompiler();
         // $this->registerMacros();
+
+        Blade::directive('vuiStyles', function () {
+            // find a better way... why such code highlighting with EOT return?
+            return <<< EOT
+                <link rel='stylesheet' href='/build/assets/vui-kit.css' />
+            EOT;
+        });
 
     }
 
@@ -92,7 +97,7 @@ class VuiKitServiceProvider extends ServiceProvider
         //     return new VuiKit();
         // });
 
-        $this->mergeConfigFrom(__DIR__ . '/../config/vui.php', 'vui');
+        $this->mergeConfigFrom(__DIR__ . '/../config/vui-kit.php', 'vui');
 
         parent::register();
 
@@ -100,6 +105,15 @@ class VuiKitServiceProvider extends ServiceProvider
         // $loader = AliasLoader::getInstance();
         // $loader->alias('WireUi', WireUi::class);
 
+    }
+
+    private function bootDirectives():void
+    {
+        Blade::directive('vuiStyles', function(string $expression) {
+            // find a way!
+            return "<?php echo Evulpo\\VuiKit::outputStyles($expression); ?>";
+
+        });
     }
 
 }
