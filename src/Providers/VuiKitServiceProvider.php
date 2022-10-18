@@ -55,6 +55,7 @@ class VuiKitServiceProvider extends ServiceProvider
         //publish
         $this->publishes([
             __DIR__.'/../config/vui-kit.php' => config_path('vui-kit.php'),
+            // if we want to publish the components views inside the project
             // __DIR__.'/../views' => resource_path('views/vendor/vui-kit'),
             __DIR__."/../../dist/vui-kit.css" => public_path('build/assets/vui-kit.css'),
             __DIR__."/../../public" => public_path('vendor/evulpo'),    
@@ -80,19 +81,18 @@ class VuiKitServiceProvider extends ServiceProvider
         // $this->registerTagCompiler();
         // $this->registerMacros();
 
-        Blade::directive('vuiStyles', function () {
-            // find a better way... why such code highlighting with EOT return?
-            return <<< EOT
-                <link rel='stylesheet' href='/build/assets/vui-kit.css' />
-            EOT;
-        });
+        // Blade::directive('vuiStyles', function () {
+        //     // find a better way... why such code highlighting with EOT return?
+        //     return <<< EOT
+        //         <link rel='stylesheet' href='/build/assets/vui-kit.css' />
+        //     EOT;
+        // });
 
     }
 
     public function register() {
 
         $this->app->singleton('vui', VuiKit::class);
-
         // App::singleton('vui', function () {
         //     return new VuiKit();
         // });
@@ -101,6 +101,7 @@ class VuiKitServiceProvider extends ServiceProvider
 
         parent::register();
 
+        // Reference
         // $this->app->singleton('WireUi', WireUi::class);
         // $loader = AliasLoader::getInstance();
         // $loader->alias('WireUi', WireUi::class);
