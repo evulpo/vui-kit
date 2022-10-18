@@ -3,7 +3,7 @@
     class="p-2" placeholder="input test"
 >
 
-<div>
+<div class="hidden">
 
     <div class="input-wrap 
     {{-- input-wrap-{{ $type }} --}}
