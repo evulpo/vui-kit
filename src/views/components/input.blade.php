@@ -5,15 +5,21 @@
 
 <div>
 
-    <div class="input-wrap input-wrap-{{ $type }}">       
+    <div class="input-wrap 
+    {{-- input-wrap-{{ $type }} --}}
+    ">       
         <div class="w-full">
-            <input {{ $attributes->class(['input input-'.$size ])->merge(['type' => 'text']) }}>    
+            <input {{ $attributes->class(['input' ])->merge(['type' => 'text']) }}>    
         </div>    
-        @if($icon != false)
-        <div class="input-icon input-{{ $size }}">
-            <i class="{{ $icon }}"></i>
+        {{-- @if($icon != false) --}}
+        <div class="input-icon 
+        {{-- input-{{ $size }} --}}
+        ">
+            <i class="
+            {{-- {{ $icon }} --}}
+            "></i>
         </div>
-        @endif
+        {{-- @endif --}}
     </div>
     
 </div>
