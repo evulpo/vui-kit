@@ -55,17 +55,17 @@ class VuiKitServiceProvider extends ServiceProvider
         //publish
         $this->publishes([
             __DIR__.'/../config/vui-kit.php' => config_path('vui-kit.php'),
-            // if we want to publish the components views inside the project
-            // __DIR__.'/../views' => resource_path('views/vendor/vui-kit'),
             __DIR__."/../../dist/vui-kit.css" => public_path('build/assets/vui-kit.css'),
             __DIR__."/../../public" => public_path('vendor/evulpo'),    
+            // if we want to publish the components views inside the project
+            // __DIR__.'/../views' => resource_path('views/vendor/vui-kit')
         ], 'vui');
 
 
         // BLADE COMPONENTS
         Blade::component('vui-inline-poc', InlinePoc::class);
         // buttons 
-        Blade::component('button', Button::class);
+        Blade::component('btnsrctest', Button::class);
         Blade::component('vui-button', Button::class);
         // Blade::component('button', Button::class, $prefix);
         // inputs

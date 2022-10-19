@@ -1,7 +1,9 @@
 @props([
+    'size' => 'sm', 'md', 'lg',
+    'type' => 'primary', 'secondary', 'error', 'success',
     'sm' => false,
     'md' => false,
-    'xl' => false,
+    'lg' => false,
     'link' => false,
     'gray' => false,
     'darkGray' => false,
@@ -21,20 +23,24 @@
         {{-- endIcon= --}}
         {{-- state?= --}}
 
-        {{-- {{ $attributes->class(['btn btn-'.$size.' btn-'.$color])->merge(['type' => 'button']) }} --}}
+        {{-- {{ $attributes->class(['btn btn-'.$size  --}}
+        {{-- .'btn-'.$color --}}
+        {{-- ])->merge(['type' => 'button']) }} --}}
+        
         {{ $attributes->class([
             'px-6 py-2' => $md,
             'px-2 py-1 text-sm' => $sm,
-            'px-10 py-3' => $xl,
+            'px-10 py-3' => $lg,
             'text-blue-500 hover:text-blue-700' => $link,
             'bg-gray-200 hover:bg-gray-300' => $gray,
             'bg-gray-600 hover:bg-gray-800 text-white' => $darkGray,
-            'rounded-md border-2 border-iris-500 text-iris-500 hover:bg-iris-500 hover:text-white active:bg-iris-600 active:text-white transition transition-all duration-300 cursor-pointer rounded']) 
+            'btn-' .$size. ' btn-' .$type. ' rounded-md border-2 
+            {{-- border-iris-500 text-iris-500 hover:bg-iris-500 hover:text-white active:bg-iris-600 active:text-white --}}
+            transition transition-all duration-300 cursor-pointer rounded']) 
         }}
-        >
 
+    >
         {{-- button src/views/components        --}}
         {{ $slot }}
-        
     </button>
 </div>

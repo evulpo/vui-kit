@@ -18,3 +18,19 @@
     @apply py-3;
     @apply text-lg;
 }
+
+.btn-primary {
+    @apply border-iris-500 text-iris-500 bg-white hover:bg-iris-500 hover:text-white active:bg-iris-600;
+}
+
+.btn-secondary {
+    @apply border-white text-white bg-iris-500 hover:bg-white hover:text-iris-500 hover:border-iris-500 active:bg-iris-100;
+}
+
+.btn-error {
+    @apply border-red-500 text-red-500 hover:bg-red-500 hover:text-white active:bg-red-300;
+}
+
+.btn-success {
+    @apply border-jade-500 text-jade-500 hover:bg-jade-500 hover:text-white active:bg-jade-300;
+}

@@ -50,7 +50,7 @@ class Button extends Component
     public function render()
     {
 
-        return view('vui::button');
+        return view('vui::btnsrctest');
 
     }
 }
