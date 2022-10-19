@@ -1,10 +1,19 @@
+@props([
+    'size' => 'sm', 'md', 'lg',
+    'type' => 'text', 'email', 'tel', 'password',
+    'placeholder' => ''
+])
+
 <input 
+    {{ $attributes->class(['input input-'
+        //. $size 
+    ])->merge(['type' => $type]) }}
     {{-- type='' --}}
-    class="p-2" placeholder="input test"
+    class="p-2" placeholder="{{ $placeholder }} input {{ $placeholder }}"
 >
 
-<div class="hidden">
 
+<div class="hidden">
     <div class="input-wrap 
     {{-- input-wrap-{{ $type }} --}}
     ">       
@@ -21,5 +30,4 @@
         </div>
         {{-- @endif --}}
     </div>
-    
 </div>
