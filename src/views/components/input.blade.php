@@ -9,7 +9,7 @@
         //. $size 
     ])->merge(['type' => $type]) }}
     {{-- type='' --}}
-    class="p-2" placeholder="{{ $placeholder }} input {{ $placeholder }}"
+    class="p-2" placeholder="{{ $placeholder }} input {{ $type }}"
 >
 
 
