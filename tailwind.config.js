@@ -11,10 +11,8 @@ module.exports = {
         './src/views/**/*.blade.php'
     ],
     safelist: [  ],
-
-    // darkMode: 'media', // or 'class' or 'media'
+    darkMode: 'class', // or 'class' or 'media'
     // important: true,
-
     theme: {
         rotate: {
             '-180': '-180deg',
@@ -51,7 +49,21 @@ module.exports = {
                 'grey':"#555555",
                 'light-blue':"#DBE7FF",
             },
-            gray: {
+            red: {
+                DEFAULT: '#FA5954',
+                '25': '#fdf6f5',
+                '50': '#fae3df',
+                '300': '#ff9c8b',
+                '500': '#FA5954',
+            },
+            // 'green': {
+            //     DEFAULT: '#5E64C4',
+            //     25: '#eef4f2',
+            //     50: '#DDE8E6',
+            //     300: '#B2DAD5',
+            //     500: '#557473',
+            // },
+            grey: {
                 200: '#E5E5E5',
                 400: '#737373',
                 500: '#505050',
@@ -67,13 +79,6 @@ module.exports = {
                 700: '#383C76',
                 800: '#26284E',
                 900: '#131427',
-            },
-            'green': {
-                DEFAULT: '#5E64C4',
-                25: '#eef4f2',
-                50: '#DDE8E6',
-                300: '#B2DAD5',
-                500: '#557473',
             },
             jade: {
                 //50: '#DDE8E6',
@@ -110,13 +115,6 @@ module.exports = {
                 700: '#99526B',
                 800: '#663647',
                 900: '#331B24',
-            },
-            red: {
-                DEFAULT: '#FA5954',
-                '25': '#fdf6f5',
-                '50': '#fae3df',
-                '300': '#ff9c8b',
-                '500': '#FA5954',
             },
             velour: {
                 //50: '#DDE8E6',
@@ -370,6 +368,5 @@ module.exports = {
             },
         },
     },
-
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio')],
 };
