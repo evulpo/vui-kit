@@ -84,12 +84,12 @@ class VuiKitServiceProvider extends ServiceProvider
         // $this->registerTagCompiler();
         // $this->registerMacros();
 
-        // Blade::directive('vuiStyles', function () {
-        //     // find a better way... why such code highlighting with EOT return?
-        //     return <<< EOT
-        //         <link rel='stylesheet' href='/build/assets/vui-kit.css' />
-        //     EOT;
-        // });
+        Blade::directive('vuiStyles', function () {
+            // find a better way... why such code highlighting with EOT return?
+            return <<< EOT
+                <link rel='stylesheet' href='/evulpo/vui-kit.css' />
+            EOT;
+        });
 
     }
 
