@@ -10,7 +10,9 @@
         <div class="alert-content inline-flex">
 
             <span class="alert-icon ">
-                <i class="
+                <x-vui::icons.academic-cap class="min-h-full min-w-full h-8 w-8"/>
+
+                <i class="hidden
                     {{-- {{ $icon }} --}}
                 "> icon </i>
             </span>
