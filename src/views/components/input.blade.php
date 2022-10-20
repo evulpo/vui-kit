@@ -5,11 +5,11 @@
 ])
 
 <input 
-    {{ $attributes->class(['input input-'
+    {{ $attributes->class(['input rounded-lg input-'
         //. $size 
     ])->merge(['type' => $type]) }}
     {{-- type='' --}}
-    class="p-2" placeholder="{{ $placeholder }} input {{ $type }}"
+    class="p-2 rounded-lg" placeholder="{{ $placeholder }} input {{ $type }}"
 >
 
 
@@ -18,7 +18,7 @@
     {{-- input-wrap-{{ $type }} --}}
     ">       
         <div class="w-full">
-            <input {{ $attributes->class(['input' ])->merge(['type' => 'text']) }}>    
+            <input {{ $attributes->class(['input rounded-lg' ])->merge(['type' => 'text']) }}>    
         </div>    
         {{-- @if($icon != false) --}}
         <div class="input-icon 

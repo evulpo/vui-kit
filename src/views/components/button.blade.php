@@ -1,10 +1,11 @@
 @props([
     'size' => 'sm', 'md', 'lg',
     'type' => 'primary', 'secondary', 'error', 'success',
+    'link' => '',
     'sm' => false,
     'md' => false,
     'lg' => false,
-    'link' => false,
+    '_blank' => false,
     'gray' => false,
     'darkGray' => false,
 ])
@@ -36,8 +37,8 @@
             'bg-gray-600 hover:bg-gray-800 text-white' => $darkGray,
             'btn-' .$size. ' btn-' .$type. ' rounded-md border-2 
             {{-- border-iris-500 text-iris-500 hover:bg-iris-500 hover:text-white active:bg-iris-600 active:text-white --}}
-            transition transition-all duration-300 cursor-pointer rounded'])->merge(['type' => 'button']) 
-        }}
+            transition transition-all duration-300 cursor-pointer rounded'])->merge(['type' => 'button'])
+        }} href="{{ $link }}"
     >
         {{-- button src/views/components " --}}
         {{ $slot }}
