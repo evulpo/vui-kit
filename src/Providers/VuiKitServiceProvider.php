@@ -70,7 +70,7 @@ class VuiKitServiceProvider extends ServiceProvider
         // Blade::component('button', Button::class, $prefix);
         // inputs
 
-
+        
 
         // LIVEWIRE COMPONENTS
         // Livewire::component('some-component', SomeComponent::class);
@@ -84,8 +84,9 @@ class VuiKitServiceProvider extends ServiceProvider
         // $this->registerTagCompiler();
         // $this->registerMacros();
 
+
         Blade::directive('vuiStyles', function () {
-            // find a better way... why such code highlighting with EOT return?
+            // find a better way! why such code highlighting?
             return <<< EOT
                 <link rel='stylesheet' href='/evulpo/vui-kit.css' />
             EOT;
