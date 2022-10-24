@@ -1,6 +1,6 @@
 @props([
     'size' => 'sm', 'md', 'lg',
-    'type' => 'text', 'email', 'tel', 'password',
+    'type' => 'text', 'email', 'tel', 'password', 'date',
     'placeholder' => ''
 ])
 
