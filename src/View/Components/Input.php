@@ -7,7 +7,7 @@ use Evulpo\VuiKit\Facades\Vui;
 use Evulpo\VuiKit\Traits\vuiBasic;
 use Evulpo\VuiKit\Traits\vuiColors;
 
-class Button extends Component
+class Input extends Component
 {
     
     /**
