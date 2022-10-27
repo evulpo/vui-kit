@@ -8,6 +8,7 @@
     '_blank' => false,
     'gray' => false,
     'darkGray' => false,
+    'disabled' => false,
 ])
 
 <div class="py-4">

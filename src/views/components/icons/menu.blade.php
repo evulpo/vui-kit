@@ -1,4 +1,4 @@
-<x-icons.dots-vertical wire:click="toggleMenu()" class=" h-10 w-10 stroke-primary-purple cursor-pointer fox-transition" />
+<x-vui::icons.dots-vertical wire:click="toggleMenu()" class=" h-10 w-10 stroke-primary-purple cursor-pointer fox-transition" />
 
 {{-- <svg {{ $attributes->merge(['type' => '', 'class' => '	']) }} viewBox="0 0 428 429" fill="none" xmlns="http://www.w3.org/2000/svg" >
 <circle cx="194" cy="194" r="194" fill="#5E64C4"/>

@@ -1,4 +1,4 @@
-<x-icons.presentation-chart-line class="lg:w-10 w-10 stroke-primary-purple mx-auto"/>
+<x-vui::icons.presentation-chart-line class="lg:w-10 w-10 stroke-primary-purple mx-auto"/>
 
 {{-- 
 <svg {{ $attributes->merge(['type' => '', 'class' => '']) }} viewBox="0 0 428 429" fill="none" xmlns="http://www.w3.org/2000/svg" >
