@@ -25,3 +25,5 @@ into `"autoload": { "psr-4": { ... } }`
 Then run inside the main root project to publish config, css and public assets :
 
 `php artisan vendor:publish --tag=vui --force`
+
+Run `composer update evulpo/vui-kit` after install or if project cannot find views.
