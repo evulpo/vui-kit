@@ -11,21 +11,11 @@ module.exports = {
         './src/views/**/*.blade.php'
     ],
     safelist: [  ],
-    darkMode: 'class', // or 'class' or 'media'
+
+    // darkMode: 'media', // or 'class' or 'media'
     // important: true,
+
     theme: {
-        rotate: {
-            '-180': '-180deg',
-            '-90': '-90deg',
-            '-45': '-45deg',
-            '0': '0',
-            '45': '45deg',
-            '90': '90deg',
-            '135': '135deg',
-            '180': '180deg',
-            '225': '225deg',
-            '270': '270deg',
-        },
         screens: {
             'mobile': {'max': '700px'},
             'xs': '475px',
@@ -35,38 +25,19 @@ module.exports = {
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
-            white: '#fff',
-            black: '#000',
-            main: '#333',
-            primary:{
-                'purple':'#5E64C4',
-                'purple-light':'#DFE0F3',
-                'purple-lighter':'#F1F5FF',
-                'red':'#ef5c6c',
-                'red-light':'#ffe4f8',
-                'green':'#6dd4a8',
-                'green-light':'#daffe3',
-                'grey':"#555555",
-                'light-blue':"#DBE7FF",
-            },
-            red: {
-                DEFAULT: '#FA5954',
-                '25': '#fdf6f5',
-                '50': '#fae3df',
-                '300': '#ff9c8b',
-                '500': '#FA5954',
-            },
-            // 'green': {
-            //     DEFAULT: '#5E64C4',
-            //     25: '#eef4f2',
-            //     50: '#DDE8E6',
-            //     300: '#B2DAD5',
-            //     500: '#557473',
-            // },
+            white: '#ffffff',
+            black: '#000000',
             grey: {
+                // 50: '#DDE8E6',
+                // 100: '#E0F6EE',
                 200: '#E5E5E5',
+                300: '#b5b5b5',
                 400: '#737373',
                 500: '#505050',
+                600: '#4b4b4b',
+                // 700: '#4b5563',
+                800: '#373737',
+                900: '#1f1f1f',
             },
             iris: {
                 50: '#E9EDF9',
@@ -80,18 +51,6 @@ module.exports = {
                 800: '#26284E',
                 900: '#131427',
             },
-            jade: {
-                //50: '#DDE8E6',
-                100: '#E0F6EE',
-                200: '#C0EEDC',
-                300: '#A1E5CB',
-                400: '#81DDB9',
-                500: '#62D4A8',
-                600: '#4EAA86',
-                700: '#3B7F65',
-                800: '#275543',
-                900: '#142A22',
-            },
             azul: {
                 //50: '#DDE8E6',
                 100: '#DEF2FE',
@@ -103,6 +62,18 @@ module.exports = {
                 700: '#377195',
                 800: '#254B64',
                 900: '#122632',
+            },
+            jade: {
+                //50: '#DDE8E6',
+                100: '#E0F6EE',
+                200: '#C0EEDC',
+                300: '#A1E5CB',
+                400: '#81DDB9',
+                500: '#62D4A8',
+                600: '#4EAA86',
+                700: '#3B7F65',
+                800: '#275543',
+                900: '#142A22',
             },
             rosa: {
                 //50: '#DDE8E6',
@@ -116,6 +87,28 @@ module.exports = {
                 800: '#663647',
                 900: '#331B24',
             },
+            red: {
+                DEFAULT: '#ef5c6c',
+                500: '#ef5c6c'
+            },
+            orange: {
+                DEFAULT: '#e28848',
+                500: '#e28848'
+            },
+            yellow: {
+                DEFAULT: '#ffe167',
+                100: '#fffdd7',
+                500: '#ffe167'
+            },
+            brown: {
+                DEFAULT: '#ef5c6c',
+                200: '#e0cba4',
+                500: '#e0cba4',
+            },
+            plume: {
+                DEFAULT: '#ef5c6c',
+                500: '#542b42'
+            },
             velour: {
                 //50: '#DDE8E6',
                 100: '#FCDEE2',
@@ -128,36 +121,88 @@ module.exports = {
                 800: '#60252B',
                 900: '#301216',
             },
-            french: {
-                DEFAULT: '#44448F',
-                '25': '#d9dafa',
-                '50': '#B3B5F6',
-                '300': '#8586C7',
-                '600': '#21156C'
-            },
-            math: {
-                DEFAULT: '#146EC0',
-                '25': '#edf6fc',
-                '50': '#DEEDFB',
-                '300': '#79B7F1',
-                '600': '#00305B'
-            },
             german: {
                 DEFAULT: '#912F40',
                 '25': '#faf0f2',
                 '50': '#F5E1E5',
+                500: '#912F40',
                 '300': '#D88895',
                 '600': '#4F0A11'
+            },
+            french: {
+                DEFAULT: '#44448F',
+                '25': '#d9dafa',
+                '50': '#B3B5F6',
+                500: '#44448F',
+                '300': '#8586C7',
+                '600': '#21156C'
             },
             english: {
                 DEFAULT: '#134458',
                 '25': '#eaf5fa',
                 '50': '#d5ecf6',
+                500: '#134458',
                 '300': '#2786ad',
                 '600': '#082b38'
             },
-            font: {
-                DEFAULT: '#636363',
+            maths: {
+                DEFAULT: '#146EC0',
+                '25': '#edf6fc',
+                '50': '#DEEDFB',
+                500: '#146EC0',
+                '300': '#79B7F1',
+                '600': '#00305B'
+            },
+            science: {
+                DEFAULT: '#009f85',
+                // '25': '#edf6fc',
+                // '50': '#DEEDFB',
+                500: '#009f85',
+                // '300': '#79B7F1',
+                // '600': '#00305B'
+            },
+            coops: {
+                DEFAULT: '#ce6e8d',
+                // '25': '#edf6fc',
+                // '50': '#DEEDFB',
+                500: '#ce6e8d',
+                // '300': '#79B7F1',
+                // '600': '#00305B'
+            },
+            history: {
+                DEFAULT: '#e28848',
+                // '25': '#edf6fc',
+                // '50': '#DEEDFB',
+                500: '#e28848',
+                // '300': '#79B7F1',
+                // '600': '#00305B'
+            },
+            // red: {
+            //     DEFAULT: '#FA5954',
+            //     '25': '#fdf6f5',
+            //     '50': '#fae3df',
+            //     '300': '#ff9c8b',
+            //     '500': '#FA5954',
+            // },
+            // 'green': {
+            //     DEFAULT: '#5E64C4',
+            //     25: '#eef4f2',
+            //     50: '#DDE8E6',
+            //     300: '#B2DAD5',
+            //     500: '#557473',
+            // },
+            // main: '#333',
+            primary:{
+                'lang': '#912F40',
+                'purple':'#5E64C4',
+                'purple-light':'#DFE0F3',
+                'purple-lighter':'#F1F5FF',
+                'red':'#ef5c6c',
+                'red-light':'#ffe4f8',
+                'green':'#6dd4a8',
+                'green-light':'#daffe3',
+                'grey':"#555555",
+                'light-blue':"#DBE7FF",
             },
             secondary: {
                 'pink': '#FFB8D1',
@@ -200,7 +245,22 @@ module.exports = {
                 'grey-light': '#F0F0F0',
                 'purple' : '#4B509D',
                 'button' : '#F9F5FF',
+            },
+            font: {
+                DEFAULT: '#636363',
             }
+        },
+        rotate: {
+            '-180': '-180deg',
+            '-90': '-90deg',
+            '-45': '-45deg',
+            '0': '0',
+            '45': '45deg',
+            '90': '90deg',
+            '135': '135deg',
+            '180': '180deg',
+            '225': '225deg',
+            '270': '270deg',
         },
         borderWidth: {
             DEFAULT: '1px',
@@ -368,5 +428,6 @@ module.exports = {
             },
         },
     },
+
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio')],
 };
