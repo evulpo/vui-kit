@@ -4,7 +4,7 @@
     class="h-6 w-6" 
     fill="none" 
     viewBox="0 0 24 24" 
-    stroke="currentColor" 
+    {{-- stroke="currentColor"  --}}
     stroke-width="1.5"
 >
     <path d="M12 14l9-5-9-5-9 5 9 5z" />
