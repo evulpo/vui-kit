@@ -1,8 +1,8 @@
 @props([
     'imageSelected' => false,
     'avatar' => '1', '2', '3', '4', '5', '6',
-    'srcIcon' => 'evulpo/svg/user-circle.svg'
-    'size' => 'sm', 'md'
+    'srcIcon' => 'evulpo/svg/user-circle.svg',
+    'size' => 'sm', 'md',
     // 'src' => '/public/evulpo/svg/user-circle.svg'
 ])
 
