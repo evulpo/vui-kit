@@ -1,5 +1,5 @@
 <svg 
-    {{ $attributes->merge(['type' => '', 'class' => ' fox-transition ']) }}
+    {{ $attributes->merge(['type' => '', 'class' => ' ']) }}
     xmlns="http://www.w3.org/2000/svg" 
     class="h-6 w-6" 
     fill="none" 

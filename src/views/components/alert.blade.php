@@ -13,7 +13,7 @@
         x-show="opened"
         {{-- x-transition --}}
         x-show.transition="opened" 
-        class="alert group bg-iris-100 hover:bg-iris-600 px-4 py-2 rounded-md flex justify-center items-center cursor-pointer
+        class="alert group bg-iris-100 hover:bg-iris-600 px-4 py-2 rounded-md flex justify-center items-center cursor-pointer fox-transition 
         {{-- {{ $type }} --}}
         ">
         <div class="alert-content flex items-center justify-start">
