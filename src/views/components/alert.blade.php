@@ -24,7 +24,7 @@
                 "> icon </i>
             </span>
 
-            <div class="alert-text px-2"></div>
+            <div class="alert-text px-2">
                 <p class="text-middle text-iris-500 group-hover:text-white"> 
                     Alert text for you.
                     {{-- {{ $text }} --}}
