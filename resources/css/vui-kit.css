@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply font-sans;
+    font-family: 'Beatrice', 'Helvetica Neue', Helvetica, Arial;
+}
+
 .btn-sm {
     @apply px-4;
     @apply py-1;
