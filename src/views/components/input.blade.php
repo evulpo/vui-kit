@@ -4,13 +4,16 @@
     'placeholder' => ''
 ])
 
-<input 
+<div class="min-w-1/4">
+    <input 
     {{ $attributes->class(['input rounded-lg input-'
         //. $size 
     ])->merge(['type' => $type]) }}
     {{-- type='' --}}
     class="p-2 rounded-lg" placeholder="{{ $placeholder }} input {{ $type }}"
->
+    >
+</div>
+
 
 
 <div class="hidden">
