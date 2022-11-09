@@ -4,7 +4,7 @@
     'placeholder' => ''
 ])
 
-<div class="min-w-1/4">
+<div class="min-w-1/4 my-4 mr-2">
     <input 
     {{ $attributes->class(['input rounded-lg input-'
         //. $size 
