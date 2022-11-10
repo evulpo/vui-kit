@@ -44,9 +44,9 @@
                 'cursor-pointer' => !$disabled,
                 'btn-' .$size. ' btn-' .$look. ' rounded-md border-2 transition transition-all duration-300'])->merge(['type' => 'button' ]) 
             }} 
-            @if(!$disabled)
+            {{-- @if(!$disabled)
                 href="{{ $link }}"
-            @endif
+            @endif --}}
         >
             {{-- button src/views/components        --}}
             {{ $slot }}
