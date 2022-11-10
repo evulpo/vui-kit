@@ -1,6 +1,6 @@
 @props([
     'size' => 'sm', 'md', 'lg',
-    'type' => 'text', 'email', 'tel', 'password', 'date',
+    'type' => 'text', 'email', 'tel', 'password', 'date', 'color',
     'placeholder' => ''
 ])
 
@@ -10,7 +10,7 @@
         //. $size 
     ])->merge(['type' => $type]) }}
     {{-- type='' --}}
-    class="p-2 rounded-lg" placeholder="{{ $placeholder }} input {{ $type }}"
+    class="p-2 rounded-lg min-w-full" placeholder="{{ $placeholder }} input {{ $type }} "
     >
 </div>
 
