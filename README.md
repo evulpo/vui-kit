@@ -22,6 +22,12 @@ and that one:
 
 into `"autoload": { "psr-4": { ... } }`
 
+## usual install in a project
+-----------------------------
+`git clone` the vui-kit (https://github.com/evulpo/vui-kit) into `./packages/evulpo`
+`composer update evulpo/vui-kit`
+`php artisan vendor:publish --tag=vui --force`
+
 Then run inside the main root project to publish config, css and public assets :
 
 `php artisan vendor:publish --tag=vui --force`
