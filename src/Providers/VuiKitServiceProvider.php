@@ -8,38 +8,19 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\View\ComponentAttributeBag;
 use Illuminate\Support\ServiceProvider;
-// use App\View\Components\vui\buttons\Button;
 
 use Evulpo\VuiKit\Facades\Vui;
-// use Evulpo\VuiKit\Classes\Vui;
 use  Evulpo\VuiKit\View\Components\{
+    Input,
     Button,
-    InlinePoc,
-    // Confirm,
-    // Dropdown,
-    // DropdownLink,
-    // Hero,
-    // Input,
-    // Loader,
-    // Modal,
-    // Nav,
-    // Navbar,
-    // NavbarMenu,
-    // NavbarMenuLink,
-    // NavbarTitle,
-    // Select,
-    // Sidenav,
-    // Sloader,
-    // Tabs,
-    // Toast,
-    // Smodal,
-    // Html
+    InlinePoc
 };
 
 class VuiKitServiceProvider extends ServiceProvider 
 {
 
-    public function boot():void {
+    public function boot():void 
+    {
 
         $prefix = 'vui';
         // dd('VuiKit Service Provider from /src/Providers/.. ' . $prefix);
@@ -71,7 +52,7 @@ class VuiKitServiceProvider extends ServiceProvider
         Blade::component('vui-button', Button::class);
         // Blade::component('button', Button::class, $prefix);
         // inputs
-
+        Blade::component('vui-input', Input::class);
         
 
         // LIVEWIRE COMPONENTS
@@ -96,7 +77,8 @@ class VuiKitServiceProvider extends ServiceProvider
 
     }
 
-    public function register() {
+    public function register() 
+    {
 
         $this->app->singleton('vui', VuiKit::class);
         // App::singleton('vui', function () {
@@ -124,3 +106,5 @@ class VuiKitServiceProvider extends ServiceProvider
     }
 
 }
+
+
