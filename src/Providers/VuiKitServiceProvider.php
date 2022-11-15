@@ -56,6 +56,8 @@ class VuiKitServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/vui-kit.php' => config_path('vui-kit.php'),
             __DIR__."/../../dist/vui-kit.css" => public_path('evulpo/vui-kit.css'),
+            __DIR__."/../../dist/vui-kit.es.js" => public_path('evulpo/vui-kit.es.js'),
+            __DIR__."/../../dist/vui-kit.umd.js" => public_path('evulpo/vui-kit.umd.js'),
             __DIR__."/../../public" => public_path('evulpo'),    
             // if we want to publish the components views inside the project
             // __DIR__.'/../views' => resource_path('views/vendor/vui-kit')
