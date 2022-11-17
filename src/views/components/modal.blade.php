@@ -12,7 +12,7 @@
             <x-vui::button size="lg" btn="act" look="secondary">Trigger Me</x-vui::button>
         </div>
 
-        <div x-show.transition="open" :class="open ? 'visible fixed z-50 top-0 bottom-0 left-0 right-0 flex' : 'invisible' " class=" bg-iris-100 bg-opacity-80 py-32 rounded-lg {{ $align ?? "justify-center" }}" x-cloak>
+        <div x-show.transition="open" :class="open ? 'visible fixed z-50 top-0 bottom-0 left-0 right-0 flex py-32' : 'invisible py-0' " class=" bg-iris-100 bg-opacity-80 rounded-lg {{ $align ?? "justify-center" }}" x-cloak>
 
             <div x-show.transition="open"
                 @click.away="open = false"
