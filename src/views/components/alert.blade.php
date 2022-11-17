@@ -33,7 +33,8 @@
 
             @if($closable)
                 <div class="alert-closebutton p-2"
-                x-if="opened == true">
+                {{-- x-if="opened == true" --}}
+                >
                     <span 
                         x-on:click="opened = ! opened" 
                         x-bind:class="opened == true ? 'rotate-0' : 'rotate-45' "
