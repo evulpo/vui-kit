@@ -3,16 +3,17 @@
 ])
 
 <div>
+    {{-- <button></button> --}}
 
     <div x-data="{open: false}" x-cloak>
-
         {{-- Trigger Button --}}
         <div @click="open = true" class="w-full">
             {{-- {{ $trigger }} --}}
             <x-vui::button size="lg" btn="act" look="secondary">Trigger Me</x-vui::button>
         </div>
 
-        <div x-show.transition="open" :class="open ? 'visible fixed z-50 top-0 bottom-0 left-0 right-0 flex py-0' : 'invisible' " class=" bg-iris-100 bg-opacity-80 py-32 rounded-lg {{ $align ?? "justify-center" }}" x-cloak>
+        <div x-show.transition="open" :class="open ? 'visible fixed z-50 top-0 bottom-0 left-0 right-0 flex' : 'invisible' " class=" bg-iris-100 bg-opacity-80 py-32 rounded-lg {{ $align ?? "justify-center" }}" x-cloak>
+
             <div x-show.transition="open"
                 @click.away="open = false"
                 class="grid grid-cols-1 w-screen h-screen/60 min-h-screen/60 max-w-3/5 min-w-96
@@ -33,11 +34,9 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
-
     </div>
-
 </div>
-
-
