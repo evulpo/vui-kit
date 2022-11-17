@@ -1,36 +1,22 @@
 @props([
     'size' => 'sm', 'md', 'lg',
-    'type' => 'text', 'email', 'tel', 'password', 'date', 'color',
-    'placeholder' => ''
+    'type' => 'text', 'email', 'tel', 'password', 'date', 'time', 'url', 'color', 'range',
+    'placeholder' => '',
+    'label' => '',
+    'name' => '',
+    'icon' => false,
+    'disabled' => false
 ])
 
-<div class="min-w-1/4 my-4 mr-2">
-    <input 
-    {{ $attributes->class(['input rounded-lg input-'
-        //. $size 
-    ])->merge(['type' => $type]) }}
-    {{-- type='' --}}
-    class="p-2 rounded-lg min-w-full" placeholder="{{ $placeholder }} input {{ $type }} "
+<div 
+    {{-- class="min-w-1/6 my-4 pr-4 flex flex-col justify-end"  --}}
+    {{ $attributes->merge([ 'class' => 'my-4 pr-4 flex flex-col justify-end' ]) }}
     >
-</div>
-
-
-
-<div class="hidden">
-    <div class="input-wrap 
-    {{-- input-wrap-{{ $type }} --}}
-    ">       
-        <div class="w-full">
-            <input {{ $attributes->class(['input rounded-lg' ])->merge(['type' => 'text']) }}>    
-        </div>    
-        {{-- @if($icon != false) --}}
-        <div class="input-icon 
-        {{-- input-{{ $size }} --}}
-        ">
-            <i class="
-            {{-- {{ $icon }} --}}
-            "></i>
-        </div>
-        {{-- @endif --}}
-    </div>
+    <x-vui::label >{{ $label }}</x-vui::label>
+    <input 
+        class="h-14 p-2 rounded-lg input input-{{ $type }}"
+        {{ $attributes->merge(['type' => $type]) }}
+        {{-- type='' --}}
+        placeholder="{{ $placeholder }} input {{ $type }}"
+    >
 </div>
