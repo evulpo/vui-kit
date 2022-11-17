@@ -7,22 +7,13 @@
 ])
 
 {{-- img src not working with SVG icon !! USE ASSET() instead of public path --}}
-<img {{ 
-    $attributes->merge([ 'class' => 'border-2 border-grey-200 rounded-full h-16 w-16 my-10 hidden']) }} 
-    {{-- alt="{{ __('Schlaufux Avatar') }}"  --}}
-    src="{{ asset( $srcIcon ) }}" 
-    {{-- src="{{ $src }}" --}}
-/>
-
 <div
-    {{ 
-        $attributes->merge([ 'class' => 'h-16 w-16 my-10']) 
-    }}
+    {{ $attributes->merge([ 'class' => 'h-16 w-16 my-10']) }}
 >
 
     @if($imageSelected)
         <img {{ 
-            $attributes->merge([ 'class' => 'border border-grey-200 rounded-full h-16 w-16 hover:opacity-50 fox-transition cursor-pointer']) }} 
+            $attributes->merge([ 'class' => 'border border-grey-200 dark:border-iris-700 rounded-full h-16 w-16 hover:opacity-50 fox-transition cursor-pointer']) }} 
             {{-- alt="{{ __('Schlaufux Avatar') }}"  --}}
             src="{{ asset( '/evulpo/svg/avatars/avatar_' . $avatar . '.svg' ) }}" 
             {{-- src="{{ $src }}" --}}
@@ -35,3 +26,4 @@
         </svg>        
     @endif
 </div>
+
