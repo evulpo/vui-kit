@@ -1,15 +1,22 @@
 @props([
     'btn' => 'nav', 'act',
-    'size' => 'sm', 'md', 'lg',
+    'size' => 'lg', 'md', 'sm',
+    'variant' => 'filled', 'outlined', 'text',
+    'color' => 'iris', 'jade', 'red', 'grey', 
     'look' => '', 'primary', 'secondary', 'error', 'success', 'filled', 'outlined',
+    'link' => '',
+    'name' => '',
+    'disabled' => false,
+    '_blank' => false,
+    'startIcon' => false,
+    'endIcon' => false,
+    'icon' => '',
+    'loading' => false,
     // 'sm' => false,
     // 'md' => false,
     // 'lg' => false,
-    'link' => '',
-    '_blank' => false,
     'grey' => false,
     'darkGrey' => false,
-    'disabled' => false,
 ])
 
 <div class="my-4">
@@ -34,17 +41,17 @@
             {{-- ])->merge(['type' => 'button']) }} --}}
             
             {{ $attributes->class([
-                // 'px-6 py-2' => $md,
-                // 'px-2 py-1 text-sm' => $sm,
-                // 'px-10 py-3' => $lg,
-                'text-blue-500 hover:text-blue-700' => $link,
-                'bg-grey-200 hover:bg-grey-300' => $grey,
-                'bg-grey-600 hover:bg-grey-800 text-white' => $darkGrey,
-                'cursor-default' => $disabled,
+                'text-blue-500 hover:text-blue-700 underline' => $link,
+                'text-'.$color.'-500 dark:text-white' => $variant == 'text',
+                'border-2 border-'.$color.'-500 bg-'.$color.'-500 text-white hover:text-'.$color.'-500 hover:bg-white ' => $variant == 'filled',
+                $variant == 'outlined' ? 'border-2 border-'.$color.' text-'.$color.'-500 hover:text-white bg-white hover:bg-'.$color.'-500' : '',
+                // 'border-grey-200 bg-grey-200 hover:bg-grey-300' => $grey,
+                // 'border-grey-500 bg-grey-600 hover:bg-grey-800 text-white' => $darkGrey,
                 'cursor-pointer' => !$disabled,
-                'btn-' .$size. ' btn-' .$look. ' rounded-md border-2 transition transition-all duration-300'])->merge(['type' => 'button' ]) 
+                'cursor-default bg-grey-200 hover:bg-grey-200 text-grey-300 hover:text-grey-300 opacity-80 border-grey-300' => $disabled,
+                'btn-' .$size.' btn-'.$variant.' btn-'.$color.' rounded-md transition transition-all duration-300'])
             }} 
-            {{-- @if(!$disabled)
+            {{-- @if(!$disabled )
                 href="{{ $link }}"
             @endif --}}
         >
@@ -57,15 +64,15 @@
         {{-- Navigates to another view --}}
         <a 
         {{ $attributes->class([
-            // 'px-6 py-2' => $md,
-            // 'px-2 py-1 text-sm' => $sm,
-            // 'px-10 py-3' => $lg,
-            'text-blue-500 hover:text-blue-700' => $link,
-            'border-grey-200 bg-grey-200 hover:bg-grey-300' => $grey,
-            'border-grey-500 bg-grey-600 hover:bg-grey-800 text-white' => $darkGrey,
+            'text-blue-500 hover:text-blue-700 underline' => $link,
+            'text-'.$color.'-500 dark:text-white' => $variant == 'text',
+            'border-2 border-'.$color.'-500 bg-'.$color.'-500 text-white hover:text-'.$color.'-500 hover:bg-white ' => $variant == 'filled',
+            $variant == 'outlined' ? 'border-2 border-'.$color.' text-'.$color.'-500 hover:text-white bg-white hover:bg-'.$color.'-500' : '',
+            // 'border-grey-200 bg-grey-200 hover:bg-grey-300' => $grey,
+            // 'border-grey-500 bg-grey-600 hover:bg-grey-800 text-white' => $darkGrey,
             'cursor-pointer' => !$disabled,
-            'cursor-default' => $disabled,
-            'btn-' .$size. ' btn-' .$look. ' rounded-md border-2 transition transition-all duration-300'])
+            'cursor-default bg-grey-200 hover:bg-grey-200 text-grey-300 hover:text-grey-300 opacity-80 border-grey-300' => $disabled,
+            'btn-' .$size.' btn-'.$variant.' btn-'.$color.' rounded-md transition transition-all duration-300'])
         }} 
         @if(!$disabled)
             href="{{ $link }}"
