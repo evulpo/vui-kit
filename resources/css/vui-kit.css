@@ -93,6 +93,14 @@ body {
     @apply border-jade-500 text-jade-500 bg-white hover:bg-jade-500 hover:text-white active:bg-jade-300;
 } */
 
+/* INPUT */
+.input {
+    @apply cursor-pointer h-14 py-3 flex px-4 justify-center border-2 border-iris-100 focus:border-iris-500 mt-2 text-sm lg:text-base font-light;
+}
+
+.input-color {
+    @apply p-1 rounded-lg;
+}
 
 .input-color {
     @apply p-1 rounded-lg

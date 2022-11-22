@@ -107,6 +107,38 @@ module.exports = {
                 DEFAULT: '#ef5c6c',
                 500: '#542b42'
             },
+            karmin: {
+                DEFAULT: '#912F40',
+                100: '#F5E1E5',
+                500: '#912F40',
+            },
+            lavande: {
+                DEFAULT: '#44448F',
+                100: '#B3B5F6',
+                500: '#44448F',
+            },
+            cabbage: {
+                DEFAULT: '#134458',
+                100: '#d5ecf6',
+                500: '#134458',
+            },
+            marine: {
+                DEFAULT: '#146EC0',
+                100: '#DEEDFB',
+                500: '#146EC0',
+            },
+            lagune: {
+                DEFAULT: '#009f85',
+                500: '#009f85',
+            },
+            pink: {
+                DEFAULT: '#ce6e8d',
+                500: '#ce6e8d',
+            },
+            // orange: {
+            //     DEFAULT: '#e28848',
+            //     500: '#e28848',
+            // },
             velour: {
                 //50: '#DDE8E6',
                 100: '#FCDEE2',
@@ -245,7 +277,7 @@ module.exports = {
                 'button' : '#F9F5FF',
             },
             font: {
-                DEFAULT: '#636363',
+                DEFAULT: '#505050',
             }
         },
         rotate: {
