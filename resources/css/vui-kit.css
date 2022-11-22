@@ -4,9 +4,15 @@
 
 body {
     @apply font-sans;
-    font-family: 'Beatrice', 'Helvetica Neue', Helvetica, Arial;
 }
 
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
+
+/* BUTTON SIZE */
 .btn-sm {
     @apply px-4;
     @apply py-1;
@@ -24,7 +30,54 @@ body {
     @apply text-lg;
 }
 
-.btn-primary {
+/* BUTTON VARIANT */
+.btn-filled {
+    @apply border-2;
+}
+.btn-outlined {
+    @apply border-2;
+}
+.btn-text {
+    @apply  bg-white/50 hover:bg-iris-100/50 dark:bg-iris-500/30 hover:dark:bg-iris-500/40;
+}
+
+/* BUTTON COLOUR */
+.btn-iris.btn-filled:not(.disabled) {
+    @apply border-iris-500 bg-iris-500 text-white hover:text-iris-500 hover:bg-white;
+}
+.btn-iris.btn-outlined:not(.disabled) {
+    @apply border-iris-500 bg-white text-iris-500 hover:text-white hover:bg-iris-500;
+}
+
+.btn-jade.btn-filled:not(.disabled) {
+    @apply border-jade-500 bg-jade-500 text-white hover:text-jade-500 hover:bg-white;
+}
+.btn-jade.btn-outlined:not(.disabled) {
+    @apply border-jade-500 bg-white text-jade-500 hover:text-white hover:bg-jade-500;
+}
+
+.btn-red.btn-filled:not(.disabled) {
+    @apply border-red-500 bg-red-500 text-white hover:text-red-500 hover:bg-white;
+}
+.btn-red.btn-outlined:not(.disabled) {
+    @apply border-red-500 bg-white text-red-500 hover:text-white hover:bg-red-500;
+}
+
+.btn-grey.btn-filled:not(.disabled) {
+    @apply border-grey-500 bg-grey-500 text-white hover:text-grey-500 hover:bg-white;
+}
+.btn-grey.btn-outlined:not(.disabled) {
+    @apply border-grey-500 bg-white text-grey-500 hover:text-white hover:bg-grey-500;
+}
+
+.btn-rosa.btn-filled:not(.disabled) {
+    @apply border-rosa-500 bg-rosa-500 text-white hover:text-rosa-500 hover:bg-white;
+}
+.btn-rosa.btn-outlined:not(.disabled) {
+    @apply border-rosa-500 bg-white text-rosa-500 hover:text-white hover:bg-rosa-500;
+}
+
+/* .btn-primary {
     @apply border-iris-500 text-white bg-iris-500 hover:bg-white hover:text-iris-500 hover:border-iris-500 active:bg-iris-100;
 }
 
@@ -38,7 +91,8 @@ body {
 
 .btn-success {
     @apply border-jade-500 text-jade-500 bg-white hover:bg-jade-500 hover:text-white active:bg-jade-300;
-}
+} */
+
 
 .input-color {
     @apply p-1 rounded-lg
