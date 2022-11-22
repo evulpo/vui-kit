@@ -48,14 +48,14 @@
                 // 'border-grey-200 bg-grey-200 hover:bg-grey-300' => $grey,
                 // 'border-grey-500 bg-grey-600 hover:bg-grey-800 text-white' => $darkGrey,
                 'cursor-pointer' => !$disabled,
-                'cursor-default bg-grey-200 hover:bg-grey-200 text-grey-300 hover:text-grey-300 opacity-80 border-grey-300' => $disabled,
+                'disabled cursor-default bg-grey-200 hover:bg-grey-200 text-grey-300 hover:text-grey-300 opacity-80 border-grey-300' => $disabled,
                 'btn-' .$size.' btn-'.$variant.' btn-'.$color.' rounded-md transition transition-all duration-300'])
             }} 
             {{-- @if(!$disabled )
                 href="{{ $link }}"
             @endif --}}
         >
-            {{-- button src/views/components        --}}
+            {{-- button src/views/components --}}
             {{ $slot }}
         </button>
 
@@ -71,7 +71,7 @@
             // 'border-grey-200 bg-grey-200 hover:bg-grey-300' => $grey,
             // 'border-grey-500 bg-grey-600 hover:bg-grey-800 text-white' => $darkGrey,
             'cursor-pointer' => !$disabled,
-            'cursor-default bg-grey-200 hover:bg-grey-200 text-grey-300 hover:text-grey-300 opacity-80 border-grey-300' => $disabled,
+            'disabled cursor-default bg-grey-200 hover:bg-grey-200 text-grey-300 hover:text-grey-300 opacity-80 border-grey-300' => $disabled,
             'btn-' .$size.' btn-'.$variant.' btn-'.$color.' rounded-md transition transition-all duration-300'])
         }} 
         @if(!$disabled)
