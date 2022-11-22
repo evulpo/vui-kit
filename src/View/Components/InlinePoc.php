@@ -17,7 +17,7 @@ class InlinePoc extends Component
     {
         return <<<'blade'
             <div>
-                <h1 >
+                <h1 class="text-font dark:text-iris-100">
                     This is an inline component from Vui Kit!        
                     {{ $slot }}
                 </h1>
