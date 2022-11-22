@@ -11,7 +11,7 @@
         <template x-for="(faq, index) in faqs" :key="`faq-{$index}`">
             <div class="border-b last:border-b-0 border-font">
                 <h3
-                    class="w-full font-medium text-font text-lg py-6 flex justify-between items-center hover:text-green fox-transition cursor-pointer"
+                    class="w-full font-medium text-font text-lg py-6 flex justify-between items-center hover:text-iris-500 dark:text-iris-100 dark:hover:text-iris-500  fox-transition cursor-pointer"
                     @click="faq_selected !== index ? faq_selected = index : faq_selected = null"
                 >
                     <div x-text="faq.question"></div>
@@ -22,7 +22,7 @@
                 <div class="relative overflow-hidden transition-all max-h-0 duration-500"
                     x-bind:style="faq_selected === index ? `max-height:  ${ $el.scrollHeight }px` : ``">
                     <p
-                        class="text-base text-font font-light leading-relaxed pb-6"
+                        class="text-base text-font dark:text-iris-100 font-light leading-relaxed pb-6"
                         x-html="faq.answer"
                     ></p>
                 </div>
@@ -38,7 +38,7 @@
 
             <div class="border-b last:border-b-0 border-font hover:text-iris-500" x-data="{opened: false}"">
                 <h3
-                    class="w-full font-medium text-font hover:text-iris-500 text-lg py-6 flex justify-between items-center fox-transition cursor-pointer"
+                    class="w-full font-medium text-font hover:text-iris-500 dark:text-iris-100 dark:hover:text-iris-500 text-lg py-6 flex justify-between items-center fox-transition cursor-pointer"
                     {{-- @click="faq_selected !== index ? faq_selected = index : faq_selected = null" --}}
                     @click="opened = ! opened"
                 >
@@ -54,7 +54,7 @@
                     x-bind:style="opened == true ? `max-height:  ${ $el.scrollHeight }px` : ``"
                 >
                     <p
-                        class="text-base text-font font-light leading-relaxed pb-6"
+                        class="text-base text-font dark:text-iris-100 font-light leading-relaxed pb-6"
                         {{-- x-html="faq.answer" --}}
                     >Because we need to test static answer content that will be used dynamically like it is the case with FAQ list.</p>
                 </div>
