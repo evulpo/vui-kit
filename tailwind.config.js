@@ -11,10 +11,8 @@ module.exports = {
         './src/views/**/*.blade.php'
     ],
     safelist: [  ],
-
-    // darkMode: 'media', // or 'class' or 'media'
+    darkMode: 'class', // or 'class' or 'media'
     // important: true,
-
     theme: {
         screens: {
             'mobile': {'max': '700px'},
