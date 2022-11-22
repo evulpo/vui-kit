@@ -50,7 +50,7 @@
                     </svg>
                 </h3>
                 <div class="relative overflow-hidden transition-all max-h-0 duration-500"
-                    x-if="opened"
+                    {{-- x-if="opened" --}}
                     x-bind:style="opened == true ? `max-height:  ${ $el.scrollHeight }px` : ``"
                 >
                     <p
