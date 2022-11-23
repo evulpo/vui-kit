@@ -1,4 +1,4 @@
-<div x-data="{ hover: false}" >
+<div x-data="{ hover: false}" {{ $attributes->merge([ 'class' => ' block relative ']) }} >
     <div 
         x-on:mouseover="hover = true" 
         x-on:mouseout="hover = false"
