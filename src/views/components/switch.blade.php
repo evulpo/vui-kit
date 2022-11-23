@@ -1,3 +1,11 @@
+@props([
+    'name' => '',
+    'value' => '',
+    // 'selected' => '', 
+    'disabled' => false, 
+
+])
+
 <div {{ $attributes->class([''])->merge(['type' => '']) }}>
     
     <div class="relative inline-block min-w-10 w-10 mr-2 align-middle select-none transition duration-200 ease-in">
