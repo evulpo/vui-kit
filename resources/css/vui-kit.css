@@ -98,14 +98,33 @@ body {
     @apply cursor-pointer h-14 py-3 flex px-4 justify-center border-2 border-iris-100 focus:border-iris-500 mt-2 text-sm lg:text-base font-light;
 }
 
-.input-text {
-    @apply rounded-lg;
+.input-text, input[type="text"] {
+    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+}
+.input-email, input[type="email"] {
+    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+}
+.input-tel, input[type="tel"] {
+    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+}
+.input-password, input[type="password"] {
+    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+}
+.input-date, input[type="date"] {
+    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+}
+.input-time, input[type="time"] {
+    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+}
+.input-color, input[type="color"] {
+    @apply p-1 rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 
-.input-color {
-    @apply p-1 rounded-lg
+.select, select {
+    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 
+/* TOGGLE */
 .toggle-checkbox:checked {
     @apply: right-0 border-jade-500;
     right: 0;
