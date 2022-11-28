@@ -3,6 +3,8 @@ Vui Kit is a package of UI components recurrently used on Evulpo learning platfo
 
 Add those lines to your main project "repositories" section of your `composer.json` file.
 
+As a local package in your installation
+
 ```
 "repositories": {
     ...
@@ -15,12 +17,25 @@ Add those lines to your main project "repositories" section of your `composer.js
     }
 }
 ```
-
 and that one: 
 
 ` "Evulpo\\VuiKit\\": "packages/evulpo/vui-kit/src", `
 
 into `"autoload": { "psr-4": { ... } }`
+
+Or as a remote package on public Github via Packagist
+"repositories": {
+    ...
+    "vui-kit": {
+        "type": "git",
+        "url": "https://github.com/evulpo/vui-kit"
+    }
+}
+```
+with that line in "autoload": 
+
+` "Evulpo\\VuiKit\\": "vendor/evulpo/vui-kit/src", `
+
 
 ## usual install in a project
 -----------------------------
