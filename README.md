@@ -24,6 +24,7 @@ and that one:
 into `"autoload": { "psr-4": { ... } }`
 
 Or as a remote package on public Github via Packagist
+```
 "repositories": {
     ...
     "vui-kit": {
@@ -32,7 +33,8 @@ Or as a remote package on public Github via Packagist
     }
 }
 ```
-with that line in "autoload": 
+
+with that line in "autoload":
 
 ` "Evulpo\\VuiKit\\": "vendor/evulpo/vui-kit/src", `
 
