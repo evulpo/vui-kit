@@ -14,7 +14,7 @@
     >
     <x-vui::label >{{ $label }}</x-vui::label>
     <input 
-        class="h-14 p-2 rounded-lg input input-{{ $type }}"
+        class="h-14 p-2 rounded-lg vui-input input-{{ $type }}"
         {{ $attributes->merge(['type' => $type]) }}
         {{-- type='' --}}
         placeholder="{{ $placeholder }} input {{ $type }}"

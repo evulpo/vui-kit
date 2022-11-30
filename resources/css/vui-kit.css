@@ -91,7 +91,7 @@
 } */
 
 /* INPUT */
-.input {
+.vui-input {
     @apply cursor-pointer h-14 py-3 flex px-4 justify-center border-2 border-iris-100 focus:border-iris-500 mt-2 text-sm lg:text-base font-light;
 }
 
