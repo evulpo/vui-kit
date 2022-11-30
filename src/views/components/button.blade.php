@@ -13,7 +13,9 @@
     'loading' => false,
 ])
 
-<div {{ $attributes->merge([ 'class' => ' ' ]) }} >
+<div 
+{{-- {{ $attributes->merge([ 'class' => ' ' ]) }}  --}}
+>
     
     @if( $btn == 'act' )
         {{-- Action on the current page --}}
