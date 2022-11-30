@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
     @apply font-sans;
-}
+} */
 
 .disabled {
     pointer-events: none;
@@ -95,29 +95,36 @@ body {
     @apply cursor-pointer h-14 py-3 flex px-4 justify-center border-2 border-iris-100 focus:border-iris-500 mt-2 text-sm lg:text-base font-light;
 }
 
-.input-text, input[type="text"] {
+/* input[type="text"], */
+.input-text {
     @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
-.input-email, input[type="email"] {
+/* input[type="email"],  */
+.input-email {
     @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
-.input-tel, input[type="tel"] {
+/* input[type="tel"],  */
+.input-tel {
     @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
-.input-password, input[type="password"] {
+/* input[type="password"], */
+.input-password {
     @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
-.input-date, input[type="date"] {
+/* input[type="date"], */
+.input-date {
     @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
-.input-time, input[type="time"] {
+/* input[type="time"],  */
+.input-time {
     @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
-.input-color, input[type="color"] {
+/* input[type="color"], */
+.input-color {
     @apply p-1 rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
-
-.select, select {
+/* select, */
+.select {
     @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 
