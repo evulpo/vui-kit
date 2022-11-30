@@ -16,7 +16,6 @@
         "php": "^7.3||^8.0",
         "laravel/framework": "^8.83|^9.16",
         "livewire/livewire": "^2.10",
-        "blade-ui-kit/blade-icons": "1.x-dev",
         "blade-ui-kit/blade-heroicons": "^1.2"
     },
     "require-dev": {
