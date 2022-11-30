@@ -71,7 +71,7 @@ class VuiKitServiceProvider extends ServiceProvider
         Blade::directive('vuiStyles', function () {
             // find a better way! why such code highlighting?
             return <<< EOT
-                <link rel='stylesheet' href='/evulpo/vui-kit.css' />
+                <link rel='stylesheet' href='/evulpo/vui-kit.css?v=1' />
             EOT;
         });
 
