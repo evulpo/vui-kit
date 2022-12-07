@@ -1,3 +1,8 @@
+/* 
+
+
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,35 +102,35 @@
 
 /* input[type="text"], */
 .input-text {
-    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="email"],  */
 .input-email {
-    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="tel"],  */
 .input-tel {
-    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="password"], */
 .input-password {
-    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="date"], */
 .input-date {
-    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="time"],  */
 .input-time {
-    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="color"], */
 .input-color {
-    @apply p-1 rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply p-1 text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* select, */
 .select {
-    @apply rounded-lg border-2 border-iris-100 focus:border-iris-500;
+    @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 
 /* TOGGLE */
@@ -134,6 +139,7 @@
     right: 0;
     border-color: #68D391;
 }
+
 .toggle-checkbox:checked + .toggle-label {
     @apply: bg-jade-500;
     background-color: #68D391;
