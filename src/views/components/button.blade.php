@@ -13,7 +13,7 @@
     'loading' => false,
 ])
 
-<div 
+<div class="flex"
 {{-- {{ $attributes->merge([ 'class' => ' ' ]) }}  --}}
 >
     

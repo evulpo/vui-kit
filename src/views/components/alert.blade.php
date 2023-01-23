@@ -18,7 +18,7 @@
         ">
         <div class="alert-content flex items-center justify-start">
             <span class="alert-icon ">
-                <x-vui::icons.academic-cap class="min-h-full min-w-full h-8 w-8 stroke-iris-500 group-hover:stroke-white"/>
+                <x-vui::icon.academic-cap class="min-h-full min-w-full h-8 w-8 stroke-iris-500 group-hover:stroke-white"/>
                 <i class="hidden
                     {{-- {{ $icon }} --}}
                 "> icon </i>
