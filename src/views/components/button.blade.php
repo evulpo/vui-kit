@@ -13,7 +13,7 @@
     'loading' => false,
 ])
 
-<div class="flex"
+<div class="flex justify-center items-center text-center my-1 "
 {{-- {{ $attributes->merge([ 'class' => ' ' ]) }}  --}}
 >
     
