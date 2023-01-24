@@ -37,13 +37,13 @@
             {{-- ])->merge(['type' => 'button']) }} --}}
             
             {{ $attributes->class([
-                $variant == 'text' ? 'text-'.$color.'-500 dark:text-white' : '',
-                $variant == 'filled' ? 'border-2 border-'.$color.'-500 bg-'.$color.'-500 text-white hover:text-'.$color.'-500 hover:bg-white ' : '',
-                $variant == 'outlined' ? 'border-2 border-'.$color.' text-'.$color.'-500 hover:text-white bg-white hover:bg-'.$color.'-500' : '',
+                $variant == 'text' ? 'vui-btn-'.$variant.' text-'.$color.'-500 dark:text-white' : '',
+                $variant == 'filled' ? 'vui-btn-'.$variant.' border-2 border-'.$color.'-500 bg-'.$color.'-500 text-white hover:text-'.$color.'-500 hover:bg-white ' : '',
+                $variant == 'outlined' ? 'vui-btn-'.$variant.' border-2 border-'.$color.' text-'.$color.'-500 hover:text-white bg-white hover:bg-'.$color.'-500' : '',
                 'disabled cursor-default opacity-80' => $disabled,
                 'cursor-pointer' => !$disabled,
                 'text-blue-500 hover:text-blue-700 underline' => $link,
-                'btn-' .$size.' btn-'.$variant.' btn-'.$color.' rounded-md transition transition-all duration-300'])
+                'vui-btn-' .$size.' vui-btn-'.$variant.' vui-btn-'.$color.' rounded-md transition transition-all duration-300'])
             }} 
             {{-- @if(!$disabled )
                 href="{{ $link }}"
@@ -57,13 +57,13 @@
         {{-- Navigates to another view --}}
         <a 
             {{ $attributes->class([
-                $variant == 'text' ? 'text-'.$color.'-500 dark:text-white' : '',
-                $variant == 'filled' ? 'border-2 border-'.$color.'-500 bg-'.$color.'-500 text-white hover:text-'.$color.'-500 hover:bg-white ' : '',
-                $variant == 'outlined' ? 'border-2 border-'.$color.' text-'.$color.'-500 hover:text-white bg-white hover:bg-'.$color.'-500' : '',
+                $variant == 'text' ? 'vui-btn-'.$variant.' text-'.$color.'-500 dark:text-white' : '',
+                $variant == 'filled' ? 'vui-btn-'.$variant.' border-2 border-'.$color.'-500 bg-'.$color.'-500 text-white hover:text-'.$color.'-500 hover:bg-white ' : '',
+                $variant == 'outlined' ? 'vui-btn-'.$variant.' border-2 border-'.$color.' text-'.$color.'-500 hover:text-white bg-white hover:bg-'.$color.'-500' : '',
                 'disabled cursor-default opacity-80' => $disabled,
                 'cursor-pointer' => !$disabled,
                 'text-blue-500 hover:text-blue-700 underline' => $link,
-                'btn-' .$size.' btn-'.$variant.' btn-'.$color.' rounded-md transition transition-all duration-300'])
+                'vui-btn-' .$size.' vui-btn-'.$variant.' vui-btn-'.$color.' rounded-md transition transition-all duration-300'])
             }}  
             @if(!$disabled)
                 href="{{ $link }}"
