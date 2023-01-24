@@ -101,31 +101,31 @@
 }
 
 /* input[type="text"], */
-.input-text {
+.vui-input-text {
     @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="email"],  */
-.input-email {
+.vui-input-email {
     @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="tel"],  */
-.input-tel {
+.vui-input-tel {
     @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="password"], */
-.input-password {
+.vui-input-password {
     @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="date"], */
-.input-date {
+.vui-input-date {
     @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="time"],  */
-.input-time {
+.vui-input-time {
     @apply text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* input[type="color"], */
-.input-color {
+.vui-input-color {
     @apply p-1 text-grey-600 focus:text-grey-900  rounded-lg border-2 border-iris-100 focus:border-iris-500;
 }
 /* select, */
