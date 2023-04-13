@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": "^7.3||^8.0",
+        "php": "^7.3||^8.0||^10.0",
         "laravel/framework": "^8.83|^9.16",
         "livewire/livewire": "^2.10",
         "blade-ui-kit/blade-heroicons": "^1.2"
